@@ -11,7 +11,6 @@
 - **原始论文**: Qiao, C., Li, D., et al. (2021). _Nature Methods_.
 - **文件格式**: **.mrc** (Medical Research Council)。
     - 这是一种标准的电子显微镜和高级光学显微镜图像存储格式，支持多维图像堆栈 (Stack)。
-    - 在本数据集中，.mrc 文件通常包含重建一幅 SIM 图像所需的原始相位图序列（如 9 张或 15 张 Raw images），或者是重建后的 3D/2D 图像。
 - **配套工具**: 补充文件中提供了 Matlab (.m) 和 Python (.py) 的 .mrc 文件读取脚本。
 
 ## **3\. 文件夹结构详情 (Folder Structure Details)**
@@ -22,8 +21,6 @@
 
 - **特点**: 拥有最完整的噪声等级序列（Level 01 至 Level 12），适合精细的抗噪性能测试。
 - **结构**:
-
-Plaintext
 
 F-actin/
 
@@ -46,7 +43,6 @@ F-actin/
 - **特点**: 包含两个版本的 Ground Truth (a 和 b)，噪声等级为 Level 01 至 Level 09。
 - **结构**:
 
-Plaintext
 
 F-actin_Nonlinear/
 
@@ -71,8 +67,6 @@ F-actin_Nonlinear/
 - **特点**: 两者结构相似，噪声等级均为 Level 01 至 Level 09。
 - **结构**:
 
-Plaintext
-
 Microtubules/ (或 CCPs/)
 
 ├── Cell_045/
@@ -94,7 +88,6 @@ Microtubules/ (或 CCPs/)
 - **特点**: 结构最为复杂。与其他类别不同，ER 的 **Ground Truth 也被分为了多个等级** (level_01 至 level_06)，且分为三个子文件夹存储。
 - **结构**:
 
-Plaintext
 
 ER/
 
@@ -169,3 +162,4 @@ url = {https://doi.org/10.6084/m9.figshare.13264793.v9}
 
 
 }
+
