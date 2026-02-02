@@ -53,7 +53,7 @@
 ### 7.STED
 
 #### 7.STED-FM
-论文：A Self-Supervised Foundation Model for Robust and Generalizable Representation Learning in STED Microscopy https://doi.org/10.1101/2025.06.06.656993
+论文：https://doi.org/10.1101/2025.06.06.656993
 
 数据集：(https://zenodo.org/records/15608143)
 
