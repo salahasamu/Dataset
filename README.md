@@ -55,7 +55,7 @@
 #### 7.STED-FM
 论文：https://doi.org/10.1101/2025.06.06.656993
 
-数据集：(https://zenodo.org/records/15608143)
+数据集：https://zenodo.org/records/15608143
 
 [STED-FM](STED-FM.md)
 
