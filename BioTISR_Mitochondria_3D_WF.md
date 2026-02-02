@@ -1,16 +1,14 @@
-**BioTISR Dataset: 3D Mitochondria (TOMM20) Subset Structure**
+# **BioTISR Dataset: 3D Mitochondria (TOMM20) Subset Structure**
 
-**1\. 简介 (Introduction)**
+## **1\. 简介 (Introduction)**
 
 该子数据集是 **BioTISR** (Biological Time-lapse Image Super-Resolution) 库的 **3D Mitochondria (线粒体/线粒体外膜)** 部分。数据通过 **3D-SIM** (三维结构光照明荧光显微镜) 模式采集。该数据集旨在提供高质量的时序生物超分辨率 (SR) 图像，用于研究线粒体的复杂形变（如分裂与融合）以及 3D 体数据的重建算法。
 
-**2\. 文件夹结构详情 (Folder Structure Details)**
+## **2\. 文件夹结构详情 (Folder Structure Details)**
 
 根据截图显示，压缩包解压后的根目录名为 BioTISR_TOMM20_3D（TOMM20 是线粒体外膜的常用标记物），内部以 **Cell (细胞)** 为单位进行组织。
 
 **目录树结构如下：**
-
-Plaintext
 
 BioTISR_TOMM20_3D/ # 数据集根目录 (3D 线粒体外膜数据)
 
@@ -34,11 +32,11 @@ BioTISR_TOMM20_3D/ # 数据集根目录 (3D 线粒体外膜数据)
 
 └── Cell_N/ # 总计包含至少 50 个不同的 ROI
 
-**3\. 文件术语与参数说明 (File Terminology & Parameters)**
+## **3\. 文件术语与参数说明 (File Terminology & Parameters)**
 
 每个 ROI 文件夹包含三份核心文件，对应不同的图像质量和处理阶段。
 
-**3.1 原始输入数据 (Raw Input)**
+### **3.1 原始输入数据 (Raw Input)**
 
 - **文件名**: RawSIMData_level_01.mrc / RawSIMData_level_02.mrc
 - **文件格式**: **.mrc** (体数据/显微镜图像堆栈格式)。
@@ -52,21 +50,21 @@ BioTISR_TOMM20_3D/ # 数据集根目录 (3D 线粒体外膜数据)
     - **Z轴 (Z-slices)**: 包含 Z 轴层面的堆栈信息（体数据）。
     - **结构**: 数据为 $N \\times M \\times T$ 的原始图像组，即每个时间点由 15 张原始条纹图组成。
 
-**3.2 超分辨真值数据 (Ground Truth)**
+### **3.2 超分辨真值数据 (Ground Truth)**
 
 - **文件名**: SIM_gt.mrc
 - **描述**: 使用传统 SIM 重建算法生成的 3D 超分辨率图像。
 - **用途**: 深度学习模型训练时的**标签 (Ground Truth)**。
 - **特性**: 线粒体外膜呈现双层膜结构，在 3D-SIM 下表现为中空的管状或网状结构，真值图像已解算出这些拓扑细节。
 
-**4\. 关键技术规格 (Technical Specifications)**
+## **4\. 关键技术规格 (Technical Specifications)**
 
 - **生物结构**: Outer Mitochondrial Membrane (线粒体外膜)，标记为 TOMM20。
 - **成像模式**: 3D-SIM (Three-Dimensional Structured Illumination Microscopy)。
 - **样本数量**: 包含至少 50 个不同的 ROI。
 - **采集策略**: 保持曝光时间恒定，通过改变激发光强度（Excitation Intensity）来获取 Level 01 和 Level 02 数据。
 
-**5\. 引用 (Citation)**
+## **5\. 引用 (Citation)**
 
 如果您在研究中使用了此数据集结构，请引用：
 
@@ -83,5 +81,6 @@ journal = {bioRxiv},
 year = {2024},
 
 doi = {10.1101/2024.05.04.592503}
+
 
 }
